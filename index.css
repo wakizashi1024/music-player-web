@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgba(25, 25, 25, 0.9);
+    text-align: center;
+}
+
+#player-source {
+    margin: 10px 0;
+    width: 400px;
+}
+
+.lyric-container {
+    border: 1px solid red;
+    height: 350px;
+    overflow: hidden;
+}
+
+.lyric-container #lyric-list {
+    border: 1px solid white;
+    list-style: none;
+    transition: 0.2s;
+}
+
+.lyric-container .lyric-line {
+    /* border: 1px solid black; */
+    color: rgba(200, 200, 200, 0.9);
+    font-size: 1em;
+    line-height: 2.5em;
+    transition: 0.2s;
+}
+
+.lyric-line.active {
+    transform: scale(1.5);
+    color: rgba(255, 255, 255, 1);
+}
